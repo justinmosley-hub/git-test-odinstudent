@@ -4,12 +4,19 @@
         <title>My First Webpage</title>
     
     </head>
+    <script>
+        function changeDemo(){
+            document.getElementById("demo").innerHTML = "I changed this with Javascript."; 
+            window.alert("Woah! Look what changed!");
+        };
+     </script>
     <body>
         <h1>Hello, World!</h1>
         <p>Hey! How is it going! You're finally programming for the first time in a while.</p>
-        <p><em>This is really important</em>;
-        <strong>Wow this is important too!</strong></p>
-            
+        <p id="demo">
+            <em>This is important!</em>
+            <strong>Wow this is important too!</strong></p>
+        <button onclick="changeDemo();">Want to change what the above says? Click me!</button>
         <p>Lets make a list of groceries I want to buy:
             <ul>
                 <li>Avocado</li>
@@ -22,5 +29,7 @@
             <a href="./about.html" rel="noopenner noreferrer" target="_blank">This is a relative link</a>
         </p>
     
+        <p>Its time for a super cool image.</p>
+        <img src="../images/dog.jpg" atl="Odin Project Image" width="300" height="300">
     </body>
 </html>
